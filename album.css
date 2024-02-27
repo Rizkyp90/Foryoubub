@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 100%;
+}
+
+body{
+    background-color: #957DAD;
+    font-size: 18px;
+    font-family: 'Inconsolata',Arial, Helvetica, sans-serif;
+    margin: 50px;
+}
+.menu{
+    order: -1;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+.menu .brand{
+    font-size: 1.4em;
+    color: black;
+}
+.menu ul{
+    list-style: none;
+    display: grid;
+
+
+}
+.menu a{
+    display: block;
+    border-radius: 5px;
+    background-color: #D291BC;
+    color: azure;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+} 
+section{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px auto;
+}
+section ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    
+}
+section ul li{
+    list-style: none;
+    background: #957DAD;
+    padding: 12px 20px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+section ul li.active{
+    background: #D291BC;
+    border-radius: 10px;
+}
+.produk{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.produk .itembox{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    display: block;
+}
+.produk .itembox.hide{
+    display: none;
+}
+.produk .itembox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100% ;
+    height: 100%;
+    object-fit: cover;
+}
